@@ -1,0 +1,29 @@
+
+.main{
+  height: 100% !important;
+  width: 100% !important;
+  position: relative !important;
+} 
+
+.left{
+  height: 100% !important;
+  width: 20% !important;
+  background-color: rgba(128, 128, 128, 0.155) !important;
+  position: fixed !important;
+}
+.right{
+  height: 100% !important;
+  width: 100% !important;
+  /* background-color: red !important; */
+  left: 20% !important;
+  position: absolute !important;
+  /* position: absolute !important; */
+}
+
+/* .vertical{
+  height: 100% !important;
+  width: 20px !important;
+  position: absolute !important;
+  left: 19.9% !important;
+  background-color: black !important;
+} */

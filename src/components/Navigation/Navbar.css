@@ -1,0 +1,11 @@
+.active{
+    color: black !important;
+}
+nav{
+    background-color: rgba(128, 128, 128, 0.155) !important;
+}
+
+.searchBar{
+    background-color: rgba(128, 128, 128, 0.155) !important;
+    color: gray !important;
+}
