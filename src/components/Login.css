@@ -1,0 +1,30 @@
+.input-container{
+    position: relative ;
+}
+#showPass {
+  position: absolute;
+  left: 45%;
+  top: 66%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #showPass {
+    right: 0;
+    background: transparent;
+    border: none;
+  }
+}
+
+@media (max-width: 480px) {
+  #showPass {
+    right: 3px;
+    /* transform: translateY(-50%);  */
+    background: transparent;
+    border: none;
+  }
+}

@@ -1,12 +1,23 @@
 import React from "react";
 import { HiMiniFaceSmile } from "react-icons/hi2";
 import { ImSad2 } from "react-icons/im";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+  NavLink,
+} from "react-router-dom";
 import Login from "./Login";
+import { useNavigate } from "react-router-dom";
 import Signup from "./Signup";
 
 const Profile = () => {
-  
+  const currentUser = true;
+  if (!currentUser) {
+    return <Navigate to="/login" />;
+  }
+
   return (
     <>
       <div className="container-fluid bg-light">
@@ -16,14 +27,17 @@ const Profile = () => {
             <h5 className="text-center mt-5 " style={{ color: "purple" }}>
               You Have not Logged In
             </h5>
-            <span>
-              <h6
-                className="text-center "
-                style={{ color: "blue", cursor: "pointer" }}
-              >
-                Click here to login
-              </h6>
-            </span>
+            <div className="text-center">
+              <NavLink to="/login">
+                <button
+                  className="btn btn-outline-secondary text-center"
+                  style={{ color: "blue" }}
+                >
+                  Click here to login
+                </button>
+              </NavLink>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -32,4 +46,3 @@ const Profile = () => {
 };
 
 export default Profile;
-  

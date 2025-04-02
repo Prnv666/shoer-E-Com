@@ -1,6 +1,8 @@
 import React from "react";
 import { AiFillStar } from "react-icons/ai";
 import { IoBag } from "react-icons/io5";
+import { MdFavoriteBorder } from "react-icons/md";
+
 
 const ProductCard = (props) => {
   const { img, title, newPrice, prevPrice, reviews } = props;
@@ -36,7 +38,7 @@ const ProductCard = (props) => {
                 </li>
                 <li className="nav-item">
                   <a href="" className="nav-link">
-                    <IoBag />
+                    <IoBag />  <MdFavoriteBorder  />
                   </a>
                 </li>
               </ul>

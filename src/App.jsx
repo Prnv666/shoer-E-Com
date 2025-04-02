@@ -8,15 +8,19 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Profile from "./components/Profile";
 import Cart from "./components/Cart";
 import Favorite from "./components/Favorite";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
 
 const App = () => {
   return (
     <>
-      <div className="main">
+      <div className="main bg-light w-100">
         <Router>
           <Navbar />
           <Routes>
             <Route path="/profile" element={<Profile />}></Route>
+            <Route path="/login" element={<Login />}></Route>
+            <Route path="/signup" element={<Signup />}></Route>
             <Route path="/favorite" element={<Favorite />}></Route>
             <Route path="/cart" element={<Cart />}></Route>
             {/* <div className="row">
